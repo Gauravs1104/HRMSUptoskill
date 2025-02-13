@@ -1,0 +1,197 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 60px;
+}
+
+.n-links {
+    display: flex;
+    gap: 30px;
+}
+
+.n-links a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.n-links a:hover {
+    color: #ffdf00;
+}
+
+#GS {
+    background-color: #ff6f61;
+    color: white;
+    height: 40px;
+    width: 140px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease, transform 0.2s ease;
+}
+
+#GS:hover {
+    background-color: #ff4b2b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.Mangmt {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #f3e7e9, #e3eeff);
+}
+
+.Mangmt h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Mangmt p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.MangmtBT button {
+    border-radius: 25px;
+    height: 40px;
+    width: 150px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.MangmtBT button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#FD {
+    background-color: #1e90ff;
+    color: white;
+}
+
+#FD:hover {
+    background-color: #007bff;
+}
+
+#LM {
+    background-color: #28a745;
+    color: white;
+}
+
+#LM:hover {
+    background-color: #218838;
+}
+
+.Outerdiv h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 50px 50px 50px;
+}
+
+.module-card {
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.module-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 2px solid #1e90ff;
+}
+
+.module-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.module-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.call-to-action {
+    background: linear-gradient(to right, hsl(12, 71%, 50%), #d57933);
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.call-to-action h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.call-to-action button {
+    background-color: white;
+    color: #ff6f61;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.call-to-action button:hover {
+    background-color: #ff4b2b;
+    color: white;
+}
+
+footer {
+    background: #343a40;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer a {
+    color: #ffdf00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
