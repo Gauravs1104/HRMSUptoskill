@@ -1,0 +1,160 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #d9e4f5);
+    color: #2c3e50;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    align-items: center;
+}
+
+.nav-link:hover {
+    color: #ffdf00 !important;
+}
+
+.cta-button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff4b2b;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hierarchy-container {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    letter-spacing: 1.5px;
+}
+
+.org-chart ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.org-chart ul ul {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.org-chart li {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    padding: 20px 5px 0;
+}
+
+.role {
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.role:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.arrow {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #2980b9, #6dd5fa);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    margin: 10px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.arrow:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.founder {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.ceo {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.branch-manager {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+}
+
+.hr {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+}
+
+.senior-team-lead {
+    background: linear-gradient(135deg, #16a085, #1abc9c);
+}
+
+.team-lead {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.employee {
+    background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ffdf00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
