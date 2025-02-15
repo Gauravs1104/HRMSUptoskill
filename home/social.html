@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMS - Social Connect</title>
+    <link rel="stylesheet" href="social.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <script>
+        // Check if user is logged in when page loads
+
+
+        // Function to handle clicks on menu items
+        function handleMenuClick(feature) {
+            const isLoggedIn = sessionStorage.getItem('isLoggedIn');
+            if (!isLoggedIn) {
+                redirectToLogin();
+                return;
+            }
+            // Handle the feature click if logged in
+            console.log(`Accessing ${feature}`);
+        }
+
+        // Function to redirect to login
+        function redirectToLogin() {
+            window.location.href = 'login.html';
+        }
+
+        // Function to handle post creation
+        function handlePostCreation() {
+            const isLoggedIn = sessionStorage.getItem('isLoggedIn');
+            if (!isLoggedIn) {
+                redirectToLogin();
+                return;
+            }
+            // Handle post creation if logged in
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="ak.html">
+                <img src="upto logo.png" alt="HRMS Logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#feed" onclick="handleMenuClick('feed')">Feed</a>
+            <a href="#stories" onclick="handleMenuClick('stories')">Stories</a>
+            <a href="#messages" onclick="handleMenuClick('messages')">Messages</a>
+            <a href="#learn" onclick="handleMenuClick('learning')">Learning</a>
+        </div>
+        <div class="user-info">
+            <span>Welcome, User</span>
+            <a href="ak.html" class="ghost-button">Logout</a>
+        </div>
+    </nav>
+
+    <div class="social-container">
+        <!-- Left Sidebar -->
+        <div class="social-sidebar">
+            <div class="menu-item active" onclick="handleMenuClick('news-feed')">
+                <span>📰 News Feed</span>
+            </div>
+            <div class="menu-item" onclick="handleMenuClick('stories')">
+                <span>📱 Stories</span>
+                <span class="badge">New</span>
+            </div>
+            <div class="menu-item" onclick="handleMenuClick('videos')">
+                <span>🎥 Videos</span>
+            </div>
+            <div class="menu-item" onclick="handleMenuClick('messages')">
+                <span>💬 Messages</span>
+            </div>
+            <div class="menu-item" onclick="handleMenuClick('teams')">
+                <span>👥 Teams</span>
+            </div>
+            <div class="menu-item" onclick="handleMenuClick('learning')">
+                <span>📚 Learning</span>
+            </div>
+            <div class="menu-item" onclick="handleMenuClick('department')">
+                <span>🏢 Department</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="social-main">
+            <!-- Create Post Section -->
+            <div class="create-post">
+                <div class="post-input">
+                    <img src="user.png" alt="User" class="avatar">
+                    <input type="text" placeholder="Share something with your colleagues..." onclick="handlePostCreation()">
+                </div>
+                <div class="post-actions">
+                    <button class="post-action-btn" onclick="handleMenuClick('photo')">📷 Photo</button>
+                    <button class="post-action-btn" onclick="handleMenuClick('video')">🎥 Video</button>
+                    <button class="post-action-btn" onclick="handleMenuClick('document')">📑 Document</button>
+                    <button class="post-action-btn" onclick="handleMenuClick('poll')">📊 Poll</button>
+                </div>
+            </div>
+
+            <!-- Stories Section -->
+            <div class="stories-container">
+                <div class="story-card add-story" onclick="handleMenuClick('add-story')">
+                    <div class="add-story-icon">+</div>
+                    <span>Add Story</span>
+                </div>
+                <!-- Example Story Cards -->
+                <div class="story-card" onclick="handleMenuClick('view-story')">
+                    <img src="user1.png" alt="User 1">
+                    <span>John Doe</span>
+                </div>
+            </div>
+
+            <!-- Feed Posts -->
+            <div class="feed-posts">
+                <div class="post-card">
+                    <div class="post-header">
+                        <img src="user2.jpeg" alt="User 2" class="avatar">
+                        <div class="post-info">
+                            <h4>Jane Smith</h4>
+                            <span>Project Manager • 2h ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Excited to announce our new project milestone! 🎉</p>
+                        <img src="project.jpg" alt="Project">
+                    </div>
+                    <div class="post-actions">
+                        <button onclick="handleMenuClick('like')">👍 Like</button>
+                        <button onclick="handleMenuClick('comment')">💬 Comment</button>
+                        <button onclick="handleMenuClick('share')">↗️ Share</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="social-sidebar right">
+            <div class="section-header">
+                <h3>Quick Access</h3>
+            </div>
+            <div class="quick-links">
+                <a href="#" onclick="handleMenuClick('my-team')" class="quick-link">📊 My Team</a>
+                <a href="#" onclick="handleMenuClick('events')" class="quick-link">📅 Events</a>
+                <a href="#" onclick="handleMenuClick('courses')" class="quick-link">🎓 Courses</a>
+                <a href="#" onclick="handleMenuClick('announcements')" class="quick-link">📢 Announcements</a>
+            </div>
+
+            <div class="section-header">
+                <h3>Active Colleagues</h3>
+            </div>
+            <div class="active-users">
+                <!-- Active user list -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 UpToSkills. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+</body>
+
+</html>
+
+</html>
