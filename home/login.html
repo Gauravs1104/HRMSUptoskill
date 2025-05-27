@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .logo img {
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo img:hover {
+            transform: scale(1.1);
+        }
+        
+        .n-links {
+            display: flex;
+            gap: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .n-links a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+        
+        .n-links a:hover {
+            color: #ffdf00;
+            transform: translateY(-2px);
+        }
+        
+        #GS {
+            background-color: #ff6f61;
+            color: white;
+            height: 35px;
+            width: 150px;
+            border-radius: 15px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: fixed;
+            right: 20px;
+            top: 30px;
+        }
+        
+        #GS:hover {
+            background-color: #ff4b2b;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+        
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 380px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        h2 {
+            margin-bottom: 10px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus {
+            border-color: #2575fc;
+            outline: none;
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        
+        button:hover {
+            background: #0056b3;
+        }
+        
+        .signup-link {
+            margin-top: 10px;
+        }
+        
+        footer {
+            width: 100%;
+            background: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        
+        footer a {
+            color: #ffdf00;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+            color: #ffd700;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="ak.html">
+                <img src="upto logo.png" alt="HRMS Logo">
+            </a>
+        </div>
+        <div class="n-links">
+            <a href="ak.html">Home</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contacts</a>
+        </div>
+        <div>
+            <button id="GS" onclick="location.href='signup.html'">Get Started</button>
+        </div>
+    </nav>
+    <div class="card">
+        <h2>Login</h2>
+        <p>Enter your credentials</p>
+        <input type="email" placeholder="Enter your email" id="email">
+        <input type="password" placeholder="Enter your password" id="password">
+        <button onclick="login()">Login</button>
+        <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+    <script>
+        function login() {
+            alert("Login successful!");
+        }
+    </script>
+    <footer>
+        <p>&copy; 2025 UpToSkills. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+
+</html>
